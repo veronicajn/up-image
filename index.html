@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="Description" content="club lectura cadiz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectores | Libros </title>
+    <link rel="icon" type="image/png" href="imagenes/icono.png" />
+    <link href="css/bootstrapv3.min.css" rel='stylesheet' type='text/css' />
+    <link href="css/bootstrapv4.min.css" rel='stylesheet' type='text/css' />
+    <!--[if lt IE 9]>
+	     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    <!-- <link href="css/less/style.css" rel="stylesheet" type="text/css" media="all" /> -->
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+    <link href="css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />    
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-9 col-xs-push-1">
+                <button type="button" id="cerrarLibroNuevo" class="close" aria-hidden="true">&times;</button>
+                <div id="loginboxLibroNuevo" class=" col-xs-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title">Nuevo Libro</div>         
+                        </div>
+                        <div class="panel-body">
+                            <form id="loginformLibroNuevo" class="form-horizontal" role="form" enctype="multipart/form-data">
+                                <div class="form-group ">
+                                    <div class="col-xs-1"></div>
+                                    <label class="control-label col-xs-2" for="tituloNuevo">Titulo(*):</label>
+                                    <div class="col-xs-8">
+                                        <div class="input-group">                                                
+                                            <input type="text" class="form-control" name="tituloNuevo" id="tituloNuevo" size="50" value = ""  >                                               
+                                        </div>                                          
+                                    </div>
+                                    <div class="col-xs-1"></div>
+                                </div> 
+                                <div class="form-group ">
+                                    <div class="col-xs-1"></div>
+                                    <label class="control-label col-xs-2" for="aniopublicacionNuevo">Publicado:</label>
+                                    <div class="col-xs-8">
+                                        <div class="input-group">                                                
+                                            <input type="text" class="form-control" name="aniopublicacionNuevo" id="aniopublicacionNuevo" maxlength="4" size="4" value = "">
+                                        </div>                                          
+                                    </div>
+                                    <div class="col-xs-1"></div>
+                                </div> 
+                                <div class="form-group ">
+                                    <div class="col-xs-1"></div>
+                                    <label class="control-label col-xs-2" for="autorNuevo">Titulo(*):</label>
+                                    <div class="col-xs-8">
+                                        <div class="input-group">                                                
+                                            <input type="text" class="form-control" name="autorNuevo" id="autorNuevo" size="50" value = ""  >                                               
+                                        </div>                                          
+                                    </div>
+                                    <div class="col-xs-1"></div>
+                                </div>                                                                    
+                                <div class="form-group ">
+                                    <div class="col-xs-1"></div>
+                                    <label class="control-label col-xs-2" for="archivoLibroNuevo">Fotografía:</label>
+                                    <div class="col-xs-8">
+                                        <div class="input-group">
+                                            <input id="archivoLibroNuevo" name="archivoLibroNuevo" multiple=true class=" file-loading" type="file">
+                                        </div>                                              
+                                    </div>
+                                    <div class="col-xs-1"></div>
+                                </div>                                                                        
+                                <div class="form-group ">
+                                    <div class="col-xs-1"></div>
+                                    <label class="control-label col-xs-2" for="resumenNuevo">Resumen:</label>
+                                    <div class="col-xs-8">
+                                        <div class="input-group campo">                                        
+                                            <textarea class="form-control" cols="80" id="resumenNuevo" name="resumenNuevo" rows="6"  ></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2"></div>
+                                </div>
+                                <div class="form-group boton-form">
+                                    <div class="col-xs-2 col-xs-push-1">
+                                        <button type="reset" class="btn btn-danger">Reiniciar</button>
+                                    </div>
+                                    <div class="col-xs-2 col-xs-push-1">
+                                        <a href="#" class="btn btn-danger" id="cancelarLibroNuevo">Cancelar</a>
+                                    </div>
+                                    <div class="col-xs-5 col-xs-push-1 controls">
+                                        <input type="submit" class="btn btn-danger" id="aceptarLibroNuevo" value="Aceptar">
+                                    </div>                                        
+                                </div>                    
+                            </form>
+                        </div>
+                    </div>
+                </div>                                                                          
+            </div>
+        </div>
+    </div>
+
+    <div id="pie"></div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrapv3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrapv4.min.js"></script>
+    <script type="text/javascript" src="js/fileinput.js"></script>    
+    <script type="text/javascript" src="js/fileinput_locale_es.js"></script>    
+    <script type="text/javascript" src="js/funciones.js"></script>
+
+</body>
+
+</html>
